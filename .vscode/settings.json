@@ -1,0 +1,40 @@
+{
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.analysis.indexing": true,
+    "editor.formatOnSave": true,
+    "python.formatting.provider": "black",
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "files.exclude": {
+        ".venv/": true,
+        "**/__pycache__": true,
+        "**/.mypy_cache": true,
+        "**/.pytest_cache": true,
+        "**/build": true,
+        "**/dist": true,
+        "docs/source/_autosummary": true
+    },
+    "esbonio.server.enabled": true,
+    "esbonio.sphinx.buildDir": "${workspaceFolder}/docs/build/html",
+    "esbonio.sphinx.confDir": "${workspaceFolder}/docs/source",
+    "esbonio.sphinx.srcDir": "${workspaceFolder}/docs/source",
+    "cSpell.words": [
+        "bysource",
+        "dataframes",
+        "dtype",
+        "dtypes",
+        "iloc",
+        "inplace",
+        "mathjax",
+        "maxdepth",
+        "Rosset",
+        "rtype",
+        "toctree",
+        "Tybles"
+    ]
+}
