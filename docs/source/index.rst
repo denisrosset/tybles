@@ -20,7 +20,7 @@ Just use `pip`::
     pip install tybles
 
 If you want to pull the `beartype <https://github.com/beartype/beartype>`_ or
-  `typeguard <https://github.com/agronholm/typeguard>`_ extras, add either or both::
+`typeguard <https://github.com/agronholm/typeguard>`_ extras, add either or both::
 
     pip install tybles[beartype, typeguard]
 
