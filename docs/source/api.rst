@@ -1,5 +1,5 @@
-tybles
-======
+API
+===
 
 .. toctree::
     :hidden:
@@ -10,4 +10,3 @@ tybles
    :recursive:
 
    tybles
-

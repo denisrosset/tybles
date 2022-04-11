@@ -24,8 +24,17 @@ extensions = [
 
 # Mappings for sphinx.ext.intersphinx. Projects have to have Sphinx-generated doc! (.inv file)
 intersphinx_mapping = {
-    "python": ("https://docs.python.org/3/", None),
+    "python": ("http://docs.python.org/3", None),
+    "numpy": ("https://numpy.org/doc/stable/", None),
+    "scipy": ("https://docs.scipy.org/doc/scipy/", None),
+    "matplotlib": ("https://matplotlib.org/stable/", None),
+    "pandas": ("https://pandas.pydata.org/docs/", None),
 }
+
+autodoc_type_aliases = {
+    "_RowSpec": "tybles._RowSpec",
+}
+
 autoclass_content = "class"  # Add __init__ doc (ie. params) to class summaries
 html_show_sourcelink = False  # Remove 'view source code' from top of page (for html, not python)
 autodoc_inherit_docstrings = True  # If no docstring, inherit from base class
@@ -67,7 +76,6 @@ html_copy_source = True
 html_show_sourcelink = True
 html_sourcelink_suffix = ""
 html_title = project
-html_favicon = "_static/favicon.png"
 html_static_path = ["_static"]
 html_theme_options = {
     "path_to_docs": "docs",
