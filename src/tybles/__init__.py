@@ -13,7 +13,7 @@ This module provides helpers to read/process/write `pandas <https://pandas.pydat
 
 import collections
 
-__version__ = "0.2.0"
+__version__ = "0.3.0"
 import os
 from dataclasses import asdict, dataclass, fields, is_dataclass
 from typing import (
