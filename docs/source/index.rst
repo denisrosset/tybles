@@ -8,7 +8,7 @@ Tybles is a simple layer over `Pandas <https://pandas.pydata.org/>`_ that:
 
 - **sets up** Pandas parsing using numpy's :class:`numpy.dtype`
 
-- **validates** the resulting dataframe using either 
+- **validates** the resulting dataframe using either
   `beartype <https://github.com/beartype/beartype>`_ or
   `typeguard <https://github.com/agronholm/typeguard>`_.
 
@@ -28,7 +28,6 @@ To use
 ------
 
 Have a look at the :ref:`tutorial <tutorial>`.
-
 
 .. toctree::
     :hidden:
