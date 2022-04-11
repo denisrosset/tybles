@@ -1,0 +1,1395 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutorial: Tybles quickstart &#8212; tybles</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="API" href="api.html" />
+    <link rel="prev" title="Tybles: simple schemas for Pandas dataframes" href="index.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">tybles</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  General information
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="index.html">
+   Home page
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Tutorial: Tybles quickstart
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  API
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="api.html">
+   API
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="_autosummary/tybles.html">
+     tybles
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="_autosummary/tybles.schema.html">
+       schema
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="_autosummary/tybles.tyble.html">
+       tyble
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="_autosummary/tybles.Schema.html">
+       Schema
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="_autosummary/tybles.Tyble.html">
+       Tyble
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+<div class="sbt-scroll-pixel-helper"></div>
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            <div class="topbar-left">
+                
+                <label class="nav-toggle-button" for="__navigation">
+                    <div class="visually-hidden">Toggle navigation</div>
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+            </div>
+            
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#csv-content">
+   CSV content
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#defining-a-dataframe-schema">
+   Defining a dataframe schema
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reading-a-csv-file">
+   Reading a CSV file
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#handling-missing-columns">
+   Handling missing columns
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#handling-extra-columns">
+   Handling extra columns
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#validation-using-beartype">
+   Validation (using beartype)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#type-safe-row-access">
+   Type-safe row access
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Tutorial: Tybles quickstart</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#csv-content">
+   CSV content
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#defining-a-dataframe-schema">
+   Defining a dataframe schema
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reading-a-csv-file">
+   Reading a CSV file
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#handling-missing-columns">
+   Handling missing columns
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#handling-extra-columns">
+   Handling extra columns
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#validation-using-beartype">
+   Validation (using beartype)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#type-safe-row-access">
+   Type-safe row access
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="tutorial-tybles-quickstart">
+<span id="tutorial"></span><h1>Tutorial: Tybles quickstart<a class="headerlink" href="#tutorial-tybles-quickstart" title="Permalink to this headline">¶</a></h1>
+<p>Let’s say we want to read the following data into a <a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v1.4.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code></a>:</p>
+<div class="highlight-csv notranslate"><div class="highlight"><pre><span></span><span class="o">kepler_id</span><span class="p">,</span><span class="m">koi_name</span><span class="p">,</span><span class="k">kepler_name</span><span class="p">,</span><span class="no">status</span><span class="p">,</span><span class="s1">period</span><span class="p">,radius</span>
+<span class="o">10666592</span><span class="p">,</span><span class="m">K00002.01</span><span class="p">,</span><span class="k">Kepler-2 b</span><span class="p">,</span><span class="no">CONFIRMED</span><span class="p">,</span><span class="s1">2.204735365</span><span class="p">,16.39</span>
+<span class="o">6922244</span><span class="p">,</span><span class="m">K00010.01</span><span class="p">,</span><span class="k">Kepler-8 b</span><span class="p">,</span><span class="no">CONFIRMED</span><span class="p">,</span><span class="s1">3.522498573</span><span class="p">,14.83</span>
+<span class="o">11904151</span><span class="p">,</span><span class="m">K00072.01</span><span class="p">,</span><span class="k">Kepler-10 b</span><span class="p">,</span><span class="no">CONFIRMED</span><span class="p">,</span><span class="s1">0.837491331</span><span class="p">,1.45</span>
+<span class="o">10187017</span><span class="p">,</span><span class="m">K00082.04</span><span class="p">,</span><span class="k">Kepler-102 c</span><span class="p">,</span><span class="no">CONFIRMED</span><span class="p">,</span><span class="s1">7.07136076</span><span class="p">,0.58</span>
+<span class="o">10187017</span><span class="p">,</span><span class="m">K00082.05</span><span class="p">,</span><span class="k">Kepler-102 b</span><span class="p">,</span><span class="no">CONFIRMED</span><span class="p">,</span><span class="s1">5.28695437</span><span class="p">,0.49</span>
+<span class="o">10984090</span><span class="p">,</span><span class="m">K00112.02</span><span class="p">,</span><span class="k">Kepler-466 c</span><span class="p">,</span><span class="no">CONFIRMED</span><span class="p">,</span><span class="s1">3.709213846</span><span class="p">,1.24</span>
+<span class="o">9579641</span><span class="p">,</span><span class="m">K00115.01</span><span class="p">,</span><span class="k">Kepler-105 b</span><span class="p">,</span><span class="no">CONFIRMED</span><span class="p">,</span><span class="s1">5.41220713</span><span class="p">,3.28</span>
+</pre></div>
+</div>
+<p>which we provide as a string below.</p>
+<p>We also provide an invalid version of the same CSV content.</p>
+<div class="section" id="csv-content">
+<h2>CSV content<a class="headerlink" href="#csv-content" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">io</span>
+
+<span class="n">valid_csv</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">kepler_id,koi_name,kepler_name,status,period,radius</span>
+<span class="s2">10666592,K00002.01,Kepler-2 b,CONFIRMED,2.204735365,16.39</span>
+<span class="s2">6922244,K00010.01,Kepler-8 b,CONFIRMED,3.522498573,14.83</span>
+<span class="s2">11904151,K00072.01,Kepler-10 b,CONFIRMED,0.837491331,1.45</span>
+<span class="s2">10187017,K00082.04,Kepler-102 c,CONFIRMED,7.07136076,0.58</span>
+<span class="s2">10187017,K00082.05,Kepler-102 b,CONFIRMED,5.28695437,0.49</span>
+<span class="s2">10984090,K00112.02,Kepler-466 c,CONFIRMED,3.709213846,1.24</span>
+<span class="s2">9579641,K00115.01,Kepler-105 b,CONFIRMED,5.41220713,3.28</span>
+<span class="s2">&quot;&quot;&quot;</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+
+<span class="n">invalid_csv</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">kepler_id,koi_name,kepler_name,status,period,radius</span>
+<span class="s2">10666592,K00002.01,Kepler-2 b,CONFIRMED,2.204735365,16.39</span>
+<span class="s2">6922244,K00010.01,Kepler-8 b,CONFIRMED,3.522498573,14.83</span>
+<span class="s2">11904151,K00072.01,Kepler-10 b,CONFIRMED,0.837491331,1.45</span>
+<span class="s2">10187017,K00082.04,Kepler-102 c,CONFIRMED,7.07136076,0.58</span>
+<span class="s2">10187017,K00082.05,Kepler-102 b,CONFIRMED,5.28695437,0.49</span>
+<span class="s2">10984090,K00112.02,Kepler-466 c,CONFIRMED,3.709213846,1.24</span>
+<span class="s2">K9579641,K00115.01,Kepler-105 b,CONFIRMED,5.41220713,3.28</span>
+<span class="s2">&quot;&quot;&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="defining-a-dataframe-schema">
+<h2>Defining a dataframe schema<a class="headerlink" href="#defining-a-dataframe-schema" title="Permalink to this headline">¶</a></h2>
+<p>We will first describe the schema using a <a class="reference external" href="https://docs.python.org/3/library/dataclasses.html#dataclasses.dataclass" title="(in Python v3.10)"><code class="xref py py-func docutils literal notranslate"><span class="pre">dataclass()</span></code></a>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">tybles</span> <span class="k">as</span> <span class="nn">tb</span>
+<span class="kn">from</span> <span class="nn">dataclasses</span> <span class="kn">import</span> <span class="n">dataclass</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="nd">@dataclass</span><span class="p">(</span><span class="n">frozen</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">Planet</span><span class="p">:</span>
+    <span class="n">kepler_id</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">int32</span>
+    <span class="n">koi_name</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">kepler_name</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">status</span><span class="p">:</span> <span class="nb">str</span>
+    <span class="n">period</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">float64</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="reading-a-csv-file">
+<h2>Reading a CSV file<a class="headerlink" href="#reading-a-csv-file" title="Permalink to this headline">¶</a></h2>
+<p>We then read the valid contents using Tybles.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">io</span> <span class="kn">import</span> <span class="n">StringIO</span>
+<span class="n">schema</span> <span class="o">=</span> <span class="n">tb</span><span class="o">.</span><span class="n">schema</span><span class="p">(</span><span class="n">Planet</span><span class="p">)</span>
+<span class="n">schema</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">StringIO</span><span class="p">(</span><span class="n">valid_csv</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>kepler_id</th>
+      <th>koi_name</th>
+      <th>kepler_name</th>
+      <th>status</th>
+      <th>period</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>10666592</td>
+      <td>K00002.01</td>
+      <td>Kepler-2 b</td>
+      <td>CONFIRMED</td>
+      <td>2.204735</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>6922244</td>
+      <td>K00010.01</td>
+      <td>Kepler-8 b</td>
+      <td>CONFIRMED</td>
+      <td>3.522499</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>11904151</td>
+      <td>K00072.01</td>
+      <td>Kepler-10 b</td>
+      <td>CONFIRMED</td>
+      <td>0.837491</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>10187017</td>
+      <td>K00082.04</td>
+      <td>Kepler-102 c</td>
+      <td>CONFIRMED</td>
+      <td>7.071361</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>10187017</td>
+      <td>K00082.05</td>
+      <td>Kepler-102 b</td>
+      <td>CONFIRMED</td>
+      <td>5.286954</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>10984090</td>
+      <td>K00112.02</td>
+      <td>Kepler-466 c</td>
+      <td>CONFIRMED</td>
+      <td>3.709214</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>9579641</td>
+      <td>K00115.01</td>
+      <td>Kepler-105 b</td>
+      <td>CONFIRMED</td>
+      <td>5.412207</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Now, if we attempt to read the invalid CSV content without Tybles, no error is raised.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">StringIO</span><span class="p">(</span><span class="n">invalid_csv</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>kepler_id</th>
+      <th>koi_name</th>
+      <th>kepler_name</th>
+      <th>status</th>
+      <th>period</th>
+      <th>radius</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>10666592</td>
+      <td>K00002.01</td>
+      <td>Kepler-2 b</td>
+      <td>CONFIRMED</td>
+      <td>2.204735</td>
+      <td>16.39</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>6922244</td>
+      <td>K00010.01</td>
+      <td>Kepler-8 b</td>
+      <td>CONFIRMED</td>
+      <td>3.522499</td>
+      <td>14.83</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>11904151</td>
+      <td>K00072.01</td>
+      <td>Kepler-10 b</td>
+      <td>CONFIRMED</td>
+      <td>0.837491</td>
+      <td>1.45</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>10187017</td>
+      <td>K00082.04</td>
+      <td>Kepler-102 c</td>
+      <td>CONFIRMED</td>
+      <td>7.071361</td>
+      <td>0.58</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>10187017</td>
+      <td>K00082.05</td>
+      <td>Kepler-102 b</td>
+      <td>CONFIRMED</td>
+      <td>5.286954</td>
+      <td>0.49</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>10984090</td>
+      <td>K00112.02</td>
+      <td>Kepler-466 c</td>
+      <td>CONFIRMED</td>
+      <td>3.709214</td>
+      <td>1.24</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>K9579641</td>
+      <td>K00115.01</td>
+      <td>Kepler-105 b</td>
+      <td>CONFIRMED</td>
+      <td>5.412207</td>
+      <td>3.28</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>But reading the invalid CSV content with Tybles, the data type mismatch is detected.
+(The error happens in Pandas, not in Tybles, actually, because Tybles provides Pandas a
+specification of the dtypes that are expected for each of the columns)</p>
+<div class="cell tag_raises-exception docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">traceback</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">schema</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">StringIO</span><span class="p">(</span><span class="n">invalid_csv</span><span class="p">))</span>
+<span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="n">traceback</span><span class="o">.</span><span class="n">print_exc</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Traceback (most recent call last):
+  File &quot;pandas/_libs/parsers.pyx&quot;, line 1113, in pandas._libs.parsers.TextReader._convert_tokens
+TypeError: Cannot cast array data from dtype(&#39;O&#39;) to dtype(&#39;int32&#39;) according to the rule &#39;safe&#39;
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &quot;/tmp/ipykernel_3326/3785629674.py&quot;, line 3, in &lt;cell line: 2&gt;
+    schema.read_csv(StringIO(invalid_csv))
+  File &quot;/home/runner/work/tybles/tybles/src/tybles/__init__.py&quot;, line 212, in read_csv
+    pd.read_csv(
+  File &quot;/home/runner/.cache/pypoetry/virtualenvs/tybles-EP-d9W_r-py3.8/lib/python3.8/site-packages/pandas/util/_decorators.py&quot;, line 311, in wrapper
+    return func(*args, **kwargs)
+ValueError: invalid literal for int() with base 10: &#39;K9579641&#39;
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="handling-missing-columns">
+<h2>Handling missing columns<a class="headerlink" href="#handling-missing-columns" title="Permalink to this headline">¶</a></h2>
+<p>The following CSV content is missing the <code class="docutils literal notranslate"><span class="pre">koi_name</span></code> column. When creating the schema, you
+can tell Tybles how to handle missing columns.</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">missing_columns=&quot;missing&quot;</span></code> returns an incomplete <a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v1.4.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">DataFrame</span></code></a>. Some features of
+Tybles, for example row validation or retrivial of rows using dataclasses will not work.</p>
+<p>When using that option, <code class="docutils literal notranslate"><span class="pre">validate</span></code> should be set to <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">missing_columns=&quot;fill&quot;</span></code> fills the missing columns with the dtype default value (for example
+zero or the empty string).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">missing_columns=&quot;error&quot;</span></code> raises an exception (this is the default).</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">missing_values_csv</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">kepler_id,kepler_name,status,period,radius</span>
+<span class="s2">10666592,Kepler-2 b,CONFIRMED,2.204735365,16.39</span>
+<span class="s2">6922244,Kepler-8 b,CONFIRMED,3.522498573,14.83</span>
+<span class="s2">11904151,Kepler-10 b,CONFIRMED,0.837491331,1.45</span>
+<span class="s2">10187017,Kepler-102 c,CONFIRMED,7.07136076,0.58</span>
+<span class="s2">10187017,Kepler-102 b,CONFIRMED,5.28695437,0.49</span>
+<span class="s2">10984090,Kepler-466 c,CONFIRMED,3.709213846,1.24</span>
+<span class="s2">9579641,Kepler-105 b,CONFIRMED,5.41220713,3.28</span>
+<span class="s2">&quot;&quot;&quot;</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">schema_missing_fill</span> <span class="o">=</span> <span class="n">tb</span><span class="o">.</span><span class="n">schema</span><span class="p">(</span><span class="n">Planet</span><span class="p">,</span> <span class="n">missing_columns</span><span class="o">=</span><span class="s2">&quot;fill&quot;</span><span class="p">)</span>
+<span class="n">schema_missing_fill</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">StringIO</span><span class="p">(</span><span class="n">missing_values_csv</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>kepler_id</th>
+      <th>koi_name</th>
+      <th>kepler_name</th>
+      <th>status</th>
+      <th>period</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>10666592</td>
+      <td></td>
+      <td>Kepler-2 b</td>
+      <td>CONFIRMED</td>
+      <td>2.204735</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>6922244</td>
+      <td></td>
+      <td>Kepler-8 b</td>
+      <td>CONFIRMED</td>
+      <td>3.522499</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>11904151</td>
+      <td></td>
+      <td>Kepler-10 b</td>
+      <td>CONFIRMED</td>
+      <td>0.837491</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>10187017</td>
+      <td></td>
+      <td>Kepler-102 c</td>
+      <td>CONFIRMED</td>
+      <td>7.071361</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>10187017</td>
+      <td></td>
+      <td>Kepler-102 b</td>
+      <td>CONFIRMED</td>
+      <td>5.286954</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>10984090</td>
+      <td></td>
+      <td>Kepler-466 c</td>
+      <td>CONFIRMED</td>
+      <td>3.709214</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>9579641</td>
+      <td></td>
+      <td>Kepler-105 b</td>
+      <td>CONFIRMED</td>
+      <td>5.412207</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">schema_missing_missing</span> <span class="o">=</span> <span class="n">tb</span><span class="o">.</span><span class="n">schema</span><span class="p">(</span><span class="n">Planet</span><span class="p">,</span> <span class="n">missing_columns</span><span class="o">=</span><span class="s2">&quot;missing&quot;</span><span class="p">,</span> <span class="n">validate</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">schema_missing_missing</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">StringIO</span><span class="p">(</span><span class="n">missing_values_csv</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>kepler_id</th>
+      <th>kepler_name</th>
+      <th>status</th>
+      <th>period</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>10666592</td>
+      <td>Kepler-2 b</td>
+      <td>CONFIRMED</td>
+      <td>2.204735</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>6922244</td>
+      <td>Kepler-8 b</td>
+      <td>CONFIRMED</td>
+      <td>3.522499</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>11904151</td>
+      <td>Kepler-10 b</td>
+      <td>CONFIRMED</td>
+      <td>0.837491</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>10187017</td>
+      <td>Kepler-102 c</td>
+      <td>CONFIRMED</td>
+      <td>7.071361</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>10187017</td>
+      <td>Kepler-102 b</td>
+      <td>CONFIRMED</td>
+      <td>5.286954</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>10984090</td>
+      <td>Kepler-466 c</td>
+      <td>CONFIRMED</td>
+      <td>3.709214</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>9579641</td>
+      <td>Kepler-105 b</td>
+      <td>CONFIRMED</td>
+      <td>5.412207</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">schema_missing_error</span> <span class="o">=</span> <span class="n">tb</span><span class="o">.</span><span class="n">schema</span><span class="p">(</span><span class="n">Planet</span><span class="p">,</span> <span class="n">missing_columns</span><span class="o">=</span><span class="s2">&quot;error&quot;</span><span class="p">)</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">schema_missing_error</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">StringIO</span><span class="p">(</span><span class="n">missing_values_csv</span><span class="p">))</span>
+<span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="n">traceback</span><span class="o">.</span><span class="n">print_exc</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Traceback (most recent call last):
+  File &quot;/tmp/ipykernel_3326/2875286452.py&quot;, line 3, in &lt;cell line: 2&gt;
+    schema_missing_error.read_csv(StringIO(missing_values_csv))
+  File &quot;/home/runner/work/tybles/tybles/src/tybles/__init__.py&quot;, line 211, in read_csv
+    return self.process_raw_data_frame(
+  File &quot;/home/runner/work/tybles/tybles/src/tybles/__init__.py&quot;, line 256, in process_raw_data_frame
+    raise ValueError(&quot;Missing columns in CSV file: &quot; + &quot;, &quot;.join(missing))
+ValueError: Missing columns in CSV file: koi_name
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="handling-extra-columns">
+<h2>Handling extra columns<a class="headerlink" href="#handling-extra-columns" title="Permalink to this headline">¶</a></h2>
+<p>There are three values for the <code class="docutils literal notranslate"><span class="pre">extra_columns</span></code> option, when calling :meth:<code class="docutils literal notranslate"><span class="pre">~tybles.Schema.read_csv</span></code>.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">extra_columns=&quot;drop&quot;</span></code> removes the extra columns from the dataframe (default).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">extra_columns=&quot;keep&quot;</span></code> keep the extra columns around.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">extra_columns=&quot;error'</span></code> raises an exception.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">extra_csv</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">kepler_id,koi_name,kepler_name,status,period,radius,extra</span>
+<span class="s2">10666592,K00002.01,Kepler-2 b,CONFIRMED,2.204735365,16.39,1</span>
+<span class="s2">6922244,K00010.01,Kepler-8 b,CONFIRMED,3.522498573,14.83,2</span>
+<span class="s2">11904151,K00072.01,Kepler-10 b,CONFIRMED,0.837491331,1.45,3</span>
+<span class="s2">10187017,K00082.04,Kepler-102 c,CONFIRMED,7.07136076,0.58,4</span>
+<span class="s2">10187017,K00082.05,Kepler-102 b,CONFIRMED,5.28695437,0.49,5</span>
+<span class="s2">10984090,K00112.02,Kepler-466 c,CONFIRMED,3.709213846,1.24,6</span>
+<span class="s2">9579641,K00115.01,Kepler-105 b,CONFIRMED,5.41220713,3.28,7</span>
+<span class="s2">&quot;&quot;&quot;</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">schema_extra_drop</span> <span class="o">=</span> <span class="n">tb</span><span class="o">.</span><span class="n">schema</span><span class="p">(</span><span class="n">Planet</span><span class="p">,</span> <span class="n">extra_columns</span><span class="o">=</span><span class="s2">&quot;drop&quot;</span><span class="p">)</span>
+<span class="n">schema_extra_drop</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">StringIO</span><span class="p">(</span><span class="n">extra_csv</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>kepler_id</th>
+      <th>koi_name</th>
+      <th>kepler_name</th>
+      <th>status</th>
+      <th>period</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>10666592</td>
+      <td>K00002.01</td>
+      <td>Kepler-2 b</td>
+      <td>CONFIRMED</td>
+      <td>2.204735</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>6922244</td>
+      <td>K00010.01</td>
+      <td>Kepler-8 b</td>
+      <td>CONFIRMED</td>
+      <td>3.522499</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>11904151</td>
+      <td>K00072.01</td>
+      <td>Kepler-10 b</td>
+      <td>CONFIRMED</td>
+      <td>0.837491</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>10187017</td>
+      <td>K00082.04</td>
+      <td>Kepler-102 c</td>
+      <td>CONFIRMED</td>
+      <td>7.071361</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>10187017</td>
+      <td>K00082.05</td>
+      <td>Kepler-102 b</td>
+      <td>CONFIRMED</td>
+      <td>5.286954</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>10984090</td>
+      <td>K00112.02</td>
+      <td>Kepler-466 c</td>
+      <td>CONFIRMED</td>
+      <td>3.709214</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>9579641</td>
+      <td>K00115.01</td>
+      <td>Kepler-105 b</td>
+      <td>CONFIRMED</td>
+      <td>5.412207</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">schema_extra_keep</span> <span class="o">=</span> <span class="n">tb</span><span class="o">.</span><span class="n">schema</span><span class="p">(</span><span class="n">Planet</span><span class="p">,</span> <span class="n">extra_columns</span><span class="o">=</span><span class="s2">&quot;keep&quot;</span><span class="p">)</span>
+<span class="n">schema_extra_keep</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">StringIO</span><span class="p">(</span><span class="n">extra_csv</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>kepler_id</th>
+      <th>koi_name</th>
+      <th>kepler_name</th>
+      <th>status</th>
+      <th>period</th>
+      <th>radius</th>
+      <th>extra</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>10666592</td>
+      <td>K00002.01</td>
+      <td>Kepler-2 b</td>
+      <td>CONFIRMED</td>
+      <td>2.204735</td>
+      <td>16.39</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>6922244</td>
+      <td>K00010.01</td>
+      <td>Kepler-8 b</td>
+      <td>CONFIRMED</td>
+      <td>3.522499</td>
+      <td>14.83</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>11904151</td>
+      <td>K00072.01</td>
+      <td>Kepler-10 b</td>
+      <td>CONFIRMED</td>
+      <td>0.837491</td>
+      <td>1.45</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>10187017</td>
+      <td>K00082.04</td>
+      <td>Kepler-102 c</td>
+      <td>CONFIRMED</td>
+      <td>7.071361</td>
+      <td>0.58</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>10187017</td>
+      <td>K00082.05</td>
+      <td>Kepler-102 b</td>
+      <td>CONFIRMED</td>
+      <td>5.286954</td>
+      <td>0.49</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>10984090</td>
+      <td>K00112.02</td>
+      <td>Kepler-466 c</td>
+      <td>CONFIRMED</td>
+      <td>3.709214</td>
+      <td>1.24</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>9579641</td>
+      <td>K00115.01</td>
+      <td>Kepler-105 b</td>
+      <td>CONFIRMED</td>
+      <td>5.412207</td>
+      <td>3.28</td>
+      <td>7</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">try</span><span class="p">:</span>
+    <span class="n">schema_extra_error</span> <span class="o">=</span> <span class="n">tb</span><span class="o">.</span><span class="n">schema</span><span class="p">(</span><span class="n">Planet</span><span class="p">,</span> <span class="n">extra_columns</span><span class="o">=</span><span class="s2">&quot;error&quot;</span><span class="p">)</span>
+    <span class="n">schema_extra_error</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">StringIO</span><span class="p">(</span><span class="n">extra_csv</span><span class="p">))</span>
+<span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="n">traceback</span><span class="o">.</span><span class="n">print_exc</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Traceback (most recent call last):
+  File &quot;/tmp/ipykernel_3326/3187951842.py&quot;, line 3, in &lt;cell line: 1&gt;
+    schema_extra_error.read_csv(StringIO(extra_csv))
+  File &quot;/home/runner/work/tybles/tybles/src/tybles/__init__.py&quot;, line 211, in read_csv
+    return self.process_raw_data_frame(
+  File &quot;/home/runner/work/tybles/tybles/src/tybles/__init__.py&quot;, line 265, in process_raw_data_frame
+    raise ValueError(&quot;Extra columns in CSV file: &quot; + &quot;, &quot;.join(extra))
+ValueError: Extra columns in CSV file: extra, radius
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="validation-using-beartype">
+<h2>Validation (using beartype)<a class="headerlink" href="#validation-using-beartype" title="Permalink to this headline">¶</a></h2>
+<p>The <a class="reference external" href="https://github.com/beartype/beartype">beartype</a> library provides helpers to add validation
+to types. Here is an example.</p>
+<p>See <a class="reference external" href="https://github.com/beartype/beartype#beartype-validators">Beartype Validators</a> for an
+explanation of the <code class="docutils literal notranslate"><span class="pre">Is[...]</span></code> syntax.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">beartype.vale</span> <span class="k">as</span> <span class="nn">bv</span> 
+<span class="kn">from</span> <span class="nn">typing_extensions</span> <span class="kn">import</span> <span class="n">Annotated</span>
+<span class="nd">@dataclass</span><span class="p">(</span><span class="n">frozen</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">ValidatedPlanet</span><span class="p">:</span>
+    <span class="n">kepler_id</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">,</span> <span class="n">bv</span><span class="o">.</span><span class="n">Is</span><span class="p">[</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">]]</span>
+    <span class="n">koi_name</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">bv</span><span class="o">.</span><span class="n">Is</span><span class="p">[</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">!=</span> <span class="s2">&quot;&quot;</span><span class="p">]]</span>
+    <span class="n">kepler_name</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">bv</span><span class="o">.</span><span class="n">Is</span><span class="p">[</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">!=</span> <span class="s2">&quot;&quot;</span><span class="p">]]</span>
+    <span class="n">status</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">bv</span><span class="o">.</span><span class="n">Is</span><span class="p">[</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">{</span><span class="s2">&quot;CANDIDATE&quot;</span><span class="p">,</span> <span class="s2">&quot;CONFIRMED&quot;</span><span class="p">}]]</span>
+    <span class="n">period</span><span class="p">:</span> <span class="n">Annotated</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">,</span> <span class="n">bv</span><span class="o">.</span><span class="n">Is</span><span class="p">[</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">]]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">negative_csv</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">kepler_id,koi_name,kepler_name,status,period,radius</span>
+<span class="s2">10666592,K00002.01,Kepler-2 b,CONFIRMED,2.204735365,16.39</span>
+<span class="s2">6922244,K00010.01,Kepler-8 b,CONFIRMED,3.522498573,14.83</span>
+<span class="s2">11904151,K00072.01,Kepler-10 b,CONFIRMED,0.837491331,1.45</span>
+<span class="s2">-10187017,K00082.04,Kepler-102 c,CONFIRMED,7.07136076,0.58</span>
+<span class="s2">10187017,K00082.05,Kepler-102 b,CONFIRMED,5.28695437,0.49</span>
+<span class="s2">10984090,K00112.02,Kepler-466 c,CONFIRMED,3.709213846,1.24</span>
+<span class="s2">9579641,K00115.01,Kepler-105 b,CONFIRMED,5.41220713,3.28</span>
+<span class="s2">&quot;&quot;&quot;</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">schema_validated</span> <span class="o">=</span> <span class="n">tb</span><span class="o">.</span><span class="n">schema</span><span class="p">(</span><span class="n">ValidatedPlanet</span><span class="p">,</span> <span class="n">validate</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># validate is true by default</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">schema_validated</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">StringIO</span><span class="p">(</span><span class="n">negative_csv</span><span class="p">))</span>
+<span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="n">traceback</span><span class="o">.</span><span class="n">print_exc</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Traceback (most recent call last):
+  File &quot;/tmp/ipykernel_3326/3476105072.py&quot;, line 3, in &lt;cell line: 2&gt;
+    schema_validated.read_csv(StringIO(negative_csv))
+  File &quot;/home/runner/work/tybles/tybles/src/tybles/__init__.py&quot;, line 211, in read_csv
+    return self.process_raw_data_frame(
+  File &quot;/home/runner/work/tybles/tybles/src/tybles/__init__.py&quot;, line 274, in process_raw_data_frame
+    self.validate_row(row)
+AssertionError: False not tri-state boolean.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">schema_not_validated</span> <span class="o">=</span> <span class="n">tb</span><span class="o">.</span><span class="n">schema</span><span class="p">(</span><span class="n">ValidatedPlanet</span><span class="p">,</span> <span class="n">validate</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="c1"># this succeeds</span>
+<span class="n">schema_not_validated</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">StringIO</span><span class="p">(</span><span class="n">negative_csv</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>kepler_id</th>
+      <th>koi_name</th>
+      <th>kepler_name</th>
+      <th>status</th>
+      <th>period</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>10666592</td>
+      <td>K00002.01</td>
+      <td>Kepler-2 b</td>
+      <td>CONFIRMED</td>
+      <td>2.204735</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>6922244</td>
+      <td>K00010.01</td>
+      <td>Kepler-8 b</td>
+      <td>CONFIRMED</td>
+      <td>3.522499</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>11904151</td>
+      <td>K00072.01</td>
+      <td>Kepler-10 b</td>
+      <td>CONFIRMED</td>
+      <td>0.837491</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>-10187017</td>
+      <td>K00082.04</td>
+      <td>Kepler-102 c</td>
+      <td>CONFIRMED</td>
+      <td>7.071361</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>10187017</td>
+      <td>K00082.05</td>
+      <td>Kepler-102 b</td>
+      <td>CONFIRMED</td>
+      <td>5.286954</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>10984090</td>
+      <td>K00112.02</td>
+      <td>Kepler-466 c</td>
+      <td>CONFIRMED</td>
+      <td>3.709214</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>9579641</td>
+      <td>K00115.01</td>
+      <td>Kepler-105 b</td>
+      <td>CONFIRMED</td>
+      <td>5.412207</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</div>
+<div class="section" id="type-safe-row-access">
+<h2>Type-safe row access<a class="headerlink" href="#type-safe-row-access" title="Permalink to this headline">¶</a></h2>
+<p>By setting <code class="docutils literal notranslate"><span class="pre">return_type=&quot;Tyble&quot;</span></code> instead of the default <code class="docutils literal notranslate"><span class="pre">return_type=&quot;DataFrame&quot;</span></code>, one gets
+a <a class="reference internal" href="_autosummary/tybles.Tyble.html#tybles.Tyble" title="tybles.Tyble"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tyble</span></code></a> object that behaves like a sequence/list.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="n">schema</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">StringIO</span><span class="p">(</span><span class="n">valid_csv</span><span class="p">),</span> <span class="n">return_type</span><span class="o">=</span><span class="s2">&quot;Tyble&quot;</span><span class="p">)</span>
+<span class="n">t</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Tyble: self.schema.row_spec=Planet
+       self[0]=Planet(kepler_id=10666592, koi_name=&#39;K00002.01&#39;, kepler_name=&#39;Kepler-2 b&#39;, status=&#39;CONFIRMED&#39;, period=2.204735365)
+       self.data_frame=
+   kepler_id   koi_name   kepler_name     status    period
+0   10666592  K00002.01    Kepler-2 b  CONFIRMED  2.204735
+1    6922244  K00010.01    Kepler-8 b  CONFIRMED  3.522499
+2   11904151  K00072.01   Kepler-10 b  CONFIRMED  0.837491
+3   10187017  K00082.04  Kepler-102 c  CONFIRMED  7.071361
+4   10187017  K00082.05  Kepler-102 b  CONFIRMED  5.286954
+5   10984090  K00112.02  Kepler-466 c  CONFIRMED  3.709214
+6    9579641  K00115.01  Kepler-105 b  CONFIRMED  5.412207
+</pre></div>
+</div>
+</div>
+</div>
+<p>The Tyble elements are instances of <code class="docutils literal notranslate"><span class="pre">schema.row_spec</span></code>, which is the dataclass that provided
+the dataframe specification.</p>
+<p>One can then use standard list comprehensions to handle the rows.</p>
+<p>Of course, such processing is much slower than using Pandas directly, but Tybles is made for
+small datasets in programs that use Pandas because of familiarity/ease-of-use.</p>
+<p>The main advantage is that row access is now typed.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">row</span><span class="o">.</span><span class="n">kepler_name</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">t</span> <span class="k">if</span> <span class="n">row</span><span class="o">.</span><span class="n">kepler_id</span> <span class="o">!=</span> <span class="mi">6922244</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Kepler-2 b&#39;,
+ &#39;Kepler-10 b&#39;,
+ &#39;Kepler-102 c&#39;,
+ &#39;Kepler-102 b&#39;,
+ &#39;Kepler-466 c&#39;,
+ &#39;Kepler-105 b&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<p>One can reconstruct a <a class="reference external" href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.html#pandas.DataFrame" title="(in pandas v1.4.2)"><code class="xref py py-class docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code></a> from a sequence of rows.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">planets</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">Planet</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">(</span><span class="mi">10666592</span><span class="p">),</span> <span class="s2">&quot;K00002.01&quot;</span><span class="p">,</span> <span class="s2">&quot;Kepler-2 b&quot;</span><span class="p">,</span> <span class="s2">&quot;CONFIRMED&quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">(</span><span class="mf">2.204735</span><span class="p">)),</span>
+    <span class="n">Planet</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">(</span><span class="mi">6922244</span><span class="p">),</span> <span class="s2">&quot;K00010.01&quot;</span><span class="p">,</span> <span class="s2">&quot;Kepler-8 b&quot;</span><span class="p">,</span> <span class="s2">&quot;CONFIRMED&quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">(</span><span class="mf">3.522499</span><span class="p">)),</span>
+<span class="p">]</span>
+<span class="n">schema</span><span class="o">.</span><span class="n">from_rows</span><span class="p">(</span><span class="n">planets</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>kepler_id</th>
+      <th>koi_name</th>
+      <th>kepler_name</th>
+      <th>status</th>
+      <th>period</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>10666592</td>
+      <td>K00002.01</td>
+      <td>Kepler-2 b</td>
+      <td>CONFIRMED</td>
+      <td>2.204735</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>6922244</td>
+      <td>K00010.01</td>
+      <td>Kepler-8 b</td>
+      <td>CONFIRMED</td>
+      <td>3.522499</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</div>
+</div>
+
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="index.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Tybles: simple schemas for Pandas dataframes</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="api.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">API</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+        &copy; Copyright 2022, Denis Rosset.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
