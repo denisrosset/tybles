@@ -327,7 +327,7 @@ def schema(
 
 
 @dataclass(frozen=True)
-class Tyble(collections.Sequence[_RowSpec], Generic[_RowSpec]):
+class Tyble(Sequence[_RowSpec], Generic[_RowSpec]):
     """
     Describes a Pandas dataframe enriched with a schema
     """
